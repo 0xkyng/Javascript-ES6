@@ -22,3 +22,10 @@ const myFunc = () => "value";
 
 //This code will still return the string value by default.
 
+const yearsUntilRetirement = birthYear => {
+    const age = 2040 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+}
+
+yearsUntilRetirement(1991);
