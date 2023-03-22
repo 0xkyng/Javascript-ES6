@@ -43,6 +43,10 @@ const isaac = {
     // Method
     calcAge: function() {
         return 2037 - this.birthYear;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge} year old ${this.job}.`
     }
 
 
