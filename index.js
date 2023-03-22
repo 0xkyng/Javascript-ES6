@@ -22,11 +22,28 @@ const myFunc = () => "value";
 
 //This code will still return the string value by default.
 
-const yearsUntilRetirement = (birthYear, firstname) => {
-    const age = 2040 - birthYear;
-    const retirement = 65 - age;
-    // return retirement;
-    return `${firstname} retires in ${retirement} years`;
-}
+// const yearsUntilRetirement = (birthYear, firstname) => {
+//     const age = 2040 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstname} retires in ${retirement} years`;
+// }
 
-yearsUntilRetirement(1991, "Isaac");
+// yearsUntilRetirement(1991, "Isaac");
+
+// OBJECTS
+// A method a function thats attached to an object
+const isaac = {
+    firstName: "Isaac",
+    lastName: "Wanger",
+    birthYear: 1991,
+    job: "developer",
+    friends: ["John", "Jane", "Joan"],
+
+    // Method
+    calcAge: function(birthYear) {
+        return 2037 - birthYear;
+    }
+
+
+}
