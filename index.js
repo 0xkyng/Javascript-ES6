@@ -33,21 +33,30 @@ const myFunc = () => "value";
 
 // OBJECTS
 // A method a function thats attached to an object
-const isaac = {
-    firstName: "Isaac",
-    lastName: "Wanger",
-    birthYear: 1991,
-    job: "developer",
-    friends: ["John", "Jane", "Joan"],
+// const isaac = {
+//     firstName: "Isaac",
+//     lastName: "Wanger",
+//     birthYear: 1991,
+//     job: "developer",
+//     friends: ["John", "Jane", "Joan"],
 
-    // Method
-    calcAge: function() {
-        return 2037 - this.birthYear;
-    },
+//     // Method
+//     calcAge: function() {
+//         return 2037 - this.birthYear;
+//     },
 
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge} year old ${this.job}.`
-    }
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge} year old ${this.job}.`
+//     }
 
 
-}
+// }
+
+// GUESS MY NUMBER GAME
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
+let highscore = 0;
+
+const displayMessage = function (message) {
+  document.querySelector('.message').textContent = message;
+};
