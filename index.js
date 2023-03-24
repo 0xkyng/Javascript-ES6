@@ -138,4 +138,9 @@ const myFunc = () => "value";
 //   document.querySelector('.number').style.width = '15rem';
 // });
 
+// MODAL WINDOW
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnsOpenModal = document.querySelectorAll('.show-modal');
+
 
