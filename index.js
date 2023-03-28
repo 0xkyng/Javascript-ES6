@@ -692,11 +692,11 @@ console.log(typeof new String('jonas').slice(1));
 // Consuming Promises with Async/Await
 // Error Handling With try...catch
 
-const getPosition = function () {
-  return new Promise(function (resolve, reject) {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-};
+// const getPosition = function () {
+//   return new Promise(function (resolve, reject) {
+//     navigator.geolocation.getCurrentPosition(resolve, reject);
+//   });
+// };
 
 // fetch(`https://restcountries.eu/rest/v2/name/${country}`).then(res => console.log(res))
 
