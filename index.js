@@ -679,6 +679,15 @@ console.log(typeof new String('jonas').slice(1));
 // console.log(addVAT2(23));
 // */
 
+// AJAX CALLS
+const getCountryData = function (country) {
+  fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+  .then(response => response.json())
+  .then(data => renderCountry([0]));
+};
+
+getCountryData('portugal');
+
 
 
   
